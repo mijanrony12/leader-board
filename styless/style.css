@@ -51,7 +51,7 @@ hr {
   margin-left: 20px;
   font-size: 1.2em;
 }
-/* top player design starts here */
+/* top player design ends here */
 
 /* top blogs design starts here */
 .top-blog {
@@ -87,7 +87,7 @@ hr {
   font-size: 12px;
 }
 
-/* top blogs design starts here */
+/* top blogs design ends here */
 
 /* latest-course design starts here */
 .latest-course {
@@ -124,4 +124,55 @@ span {
   font-weight: 600;
   font-size: 14.6913px;
 }
-/* latest-course design starts here */
+/* latest-course design ends here */
+
+/* media quaries */
+
+/* for mobile divices */
+
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .top-players {
+  }
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* .player {
+    justify-content: center;
+  } */
+  .player {
+    flex-direction: column;
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+  .blog {
+    flex-direction: column;
+  }
+  .courses {
+    display: block;
+    /* justify-content: space-between; */
+  }
+}
+/* tablet devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+
+    text-align: center;
+  }
+  .blogs {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+  .courses {
+    display: flex;
+    /* justify-content: space-between; */
+  }
+}
