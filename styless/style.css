@@ -42,10 +42,13 @@ hr {
 .player {
   display: flex;
   align-items: center;
+  margin: 5px;
+  border-radius: 10px;
 }
 .player img {
   width: 60px;
   height: 60px;
+  padding: 10px;
 }
 .player h3 {
   margin-left: 20px;
@@ -172,7 +175,8 @@ span {
     text-align: center;
   }
   .courses {
-    display: flex;
-    /* justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
   }
 }
